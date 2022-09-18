@@ -17,9 +17,9 @@
         <section class="entrada">
             <textarea name="entrada" id="input"  placeholder="Digite seu texto..."></textarea>
             <div class="buttons-container">
-                <div class="button">
-                    <button id="codificar" onclick="criptografar()">Criptografar</button>
-                    <button id="decodificar" onclick="descriptografar()">Descriptografar</button>
+                <div class="buttons">
+                    <button class="codificar" onclick="criptografar()">Criptografar</button>
+                    <button class="decodificar" onclick="descriptografar()">Descriptografar</button>
                 </div>
                 <p class="info">
                     <i class="fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e sem acento.
@@ -31,7 +31,7 @@
         <section class="resultado">
             <img id="imagem" src="imagens/espera_texto.png" alt="Espera texto">
             <textarea id="texto"></textarea>
-            <button id="copiar" onclick="copiar()">Copiar</button>
+            <button class="copiar" onclick="copiar()">Copiar</button>
         </section>    
         
     </main>

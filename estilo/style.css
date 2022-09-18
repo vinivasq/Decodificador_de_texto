@@ -34,7 +34,7 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 2em;
 
 }
 
@@ -59,15 +59,16 @@ main {
 
 .buttons-container{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
 
-.button {
+.buttons {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 5px;
-    gap: 30px;
+    gap: 1em 2em;
 }
 
 .info {
@@ -75,48 +76,39 @@ main {
     color: #495057;
 }
 
-#codificar {
+button {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 200px;
     height: 36px;
-    background: #A27EFD;
     box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.47);
-    border: none;
     border-radius: 10px;
-    
-    font-family: 'Inter';
-    font-size: 16px;
-    color: #FFFFFF;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
-    
-}
-
-#decodificar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 36px;
-    background: none;
-    box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.47);
-    border: 1px solid #A27EFD;
-    border-radius: 10px;
-    
     font-family: 'Inter';
     font-size: 16px;
     font-weight: 400;
     color: #495057;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
-    
+
+}
+
+.codificar {
+
+    background: #A27EFD;
+    border: none;    
+    color: #FFFFFF;   
+}
+
+.decodificar {
+    background: none;
+    border: 1px solid #A27EFD;
+}
+
+.copiar {
+    background: none;
+    margin-bottom: 20px;
+    border: 1px solid #A27EFD;
+    position: absolute;
+    align-self: flex-end;
 }
 
 .resultado {
@@ -124,7 +116,6 @@ main {
     justify-content: center;
     align-items: flex-start;
     flex-grow: 1;
-    position: relative;
     width: 300px;
     height: 600px;
     background-color: #FFFFFF;
@@ -152,27 +143,6 @@ main {
     border: none;
 }
 
-#copiar {
-    position: absolute;
-    align-self: flex-end;
-    margin-bottom: 20px;
-    width: 200px;
-    height: 36px;
-    background: none;
-    box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.47);
-    border: 1px solid #A27EFD;
-    border-radius: 10px;
-    
-
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 400;
-    color: #495057;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
-
-}
 
 footer {
     display: flex;
